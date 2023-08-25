@@ -44,7 +44,7 @@ class Voice_Typing():
             self.status_text.set("Sorry, could not recognize what you said")
         except sr.RequestError:
             self.status_text.set("Sorry, could not connect to the speech recognition service")
-        self.root.update()
+            self.root.update()
 
     def stop_listen(self):
         self.status_text.set("Listening stopped")
